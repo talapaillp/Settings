@@ -19,17 +19,17 @@ $ composer require dick/settings
 
 ## Usage
 
-# End user
+### End user
 Add it to the menu or access it by its route: **application/admin/setting**
 
-# Programmer
+### Programmer
 Use it like you would any config value in a virtual settings.php file. Except the values are stored in the database and fetched on boot, instead of being stored in a file.
 
 ``` php
 Config::get('settings.contact_email')
 ```
 
-# Add new settings
+### Add new settings
 
 Settings are stored in the database in the "settings" table. Its columns are:
 - id (ex: 1)
