@@ -7,7 +7,7 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-An interface for the administrator to easily change application settings.
+An interface for the administrator to easily change application settings. Uses Dick CRUD, on Laravel 5.1.
 
 ## Install
 
