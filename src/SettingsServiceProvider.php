@@ -37,6 +37,14 @@ class SettingsServiceProvider extends ServiceProvider
             // use this if your package has routes
             $this->setupRoutes($this->app->router);
         }
+
+        // publish the migrations and seeds
+        $this->publishes([
+            __DIR__.'/database/migrations/' => database_path('migrations')
+        ], 'migrations');
+        $this->publishes([
+            __DIR__.'/database/seeds/' => database_path('seeds')
+        ], 'seeds');
     }
     /**
      * Define the routes for the application.

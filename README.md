@@ -15,6 +15,8 @@ Via Composer
 
 ``` bash
 $ composer require dick/settings
+$ php artisan vendor:publish --provider="Dick\Settings\SettingsServiceProvider"
+$ php artisan migrate
 ```
 
 ## Usage
