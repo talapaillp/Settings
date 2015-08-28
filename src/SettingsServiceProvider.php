@@ -22,17 +22,21 @@ class SettingsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // get all settings from the database
-        $settings = Setting::all();
+        // only use the Settings package if the Settings table is present in the database
+        if (count(DB::select("SHOW TABLES LIKE 'settings'")))
+        {
+            // get all settings from the database
+            $settings = Setting::all();
 
-        // bind all settings to the Laravel config, so you can call them like
-        // Config::get('settings.contact_email')
-        foreach ($settings as $key => $setting) {
-            Config::set('settings.'.$setting->key, $setting->value);
+            // bind all settings to the Laravel config, so you can call them like
+            // Config::get('settings.contact_email')
+            foreach ($settings as $key => $setting) {
+                Config::set('settings.'.$setting->key, $setting->value);
+            }
+
+            // use this if your package has routes
+            $this->setupRoutes($this->app->router);
         }
-
-        // use this if your package has routes
-        $this->setupRoutes($this->app->router);
     }
     /**
      * Define the routes for the application.
