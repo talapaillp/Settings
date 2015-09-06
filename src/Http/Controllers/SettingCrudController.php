@@ -80,9 +80,10 @@ class SettingCrudController extends CrudController {
 		$model = $this->crud['model'];
 		$this->data['entries'] = $model::where('active', 1)->get(); // <---- this is where it's different
 
-		$this->_prepare_columns(); // checks that the columns are defined and makes sure the response is proper
+		$this->prepareColumns(); // checks that the columns are defined and makes sure the response is proper
 
 		$this->data['crud'] = $this->crud;
+
 		// load the view from /resources/views/vendor/dick/crud/ if it exists, otherwise load the one in the package
 		if (view()->exists('vendor.dick.crud.list'))
 		{
@@ -126,7 +127,7 @@ class SettingCrudController extends CrudController {
 				}
 			}
 		}
-		$this->_prepare_fields($this->data['entry']); // prepare the fields you need to show and prepopulate the values
+		$this->prepareFields($this->data['entry']); // prepare the fields you need to show and prepopulate the values
 
 		$this->data['crud'] = $this->crud;
 		// load the view from /resources/views/vendor/dick/crud/ if it exists, otherwise load the one in the package
@@ -142,11 +143,11 @@ class SettingCrudController extends CrudController {
 
 	public function store(StoreRequest $request)
 	{
-		return parent::store_crud();
+		return parent::storeCrud();
 	}
 
 	public function update(UpdateRequest $request)
 	{
-		return parent::update_crud();
+		return parent::updateCrud();
 	}
 }
