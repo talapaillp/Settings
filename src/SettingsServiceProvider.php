@@ -33,9 +33,6 @@ class SettingsServiceProvider extends ServiceProvider
             foreach ($settings as $key => $setting) {
                 Config::set('settings.'.$setting->key, $setting->value);
             }
-
-            // use this if your package has routes
-            $this->setupRoutes($this->app->router);
         }
 
         // publish the migrations and seeds
@@ -67,6 +64,7 @@ class SettingsServiceProvider extends ServiceProvider
     public function register()
     {
         $this->registerSettings();
+        $this->setupRoutes($this->app->router);
 
         // use this if your package has a config file
         // config([
