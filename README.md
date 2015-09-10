@@ -46,6 +46,10 @@ Settings are stored in the database in the "settings" table. Its columns are:
 
 There is no interface available to add new settings. They are added by the developer directly in the database, since the Dick CRUD field configuration is a bit complicated. See the field types and their configuration code on http://usedick.com/docs
 
+## Screenshots
+
+See http://usedick.com
+
 ## Change log
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
