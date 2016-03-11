@@ -20,6 +20,12 @@ All Notable changes to `Dick Settings` will be documented in this file
 - Nothing
 
 
+## 1.2.0 - 2016-03-11
+
+### Fixed
+- Changes namespaces to Backpack and removed every mention of Dick.
+
+
 ## 1.1.3 - 2015-09-10
 
 ### Fixed

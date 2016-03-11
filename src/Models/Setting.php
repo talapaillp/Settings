@@ -1,7 +1,7 @@
-<?php namespace Dick\Settings\Models;
+<?php namespace Backpack\Settings\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Dick\CRUD\CrudTrait;
+use Backpack\CRUD\CrudTrait;
 
 class Setting extends Model {
 

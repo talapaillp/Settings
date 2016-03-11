@@ -1,4 +1,4 @@
-# Dick Settings
+# Backpack\Settings
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
@@ -7,17 +7,29 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-An interface for the administrator to easily change application settings. Uses Dick CRUD, on Laravel 5.1.
+An interface for the administrator to easily change application settings. Uses Laravel Backpack. On Laravel 5.2.
 
 ## Install
 
-Via Composer
+1) In your terminal:
 
 ``` bash
-$ composer require dick/settings
-$ php artisan vendor:publish --provider="Dick\Settings\SettingsServiceProvider"
-$ php artisan migrate
+$ composer require backpack/settings
+$ php artisan migrate --path=vendor/backpack/settings/src/database/migrations
+$ php artisan db:seed --class="Backpack\Settings\database\seeds\SettingsTableSeeder"
 ```
+
+2) Add the service provider to your config/app.php file:
+```php
+Backpack\Settings\SettingsServiceProvider::class,
+```
+
+3) [Optional] Add a menu item for it in resources/views/vendor/backpack/base/inc/sidebar.blade.php or menu.blade.php:
+
+```html
+<li><a href="{{ url('admin/setting') }}"><i class="fa fa-cog"></i> <span>Settings</span></a></li>
+```
+
 
 ## Usage
 
@@ -38,17 +50,17 @@ Settings are stored in the database in the "settings" table. Its columns are:
 - key (ex: contact_email)
 - name (ex: Contact form email address)
 - description (ex: The email address that all emails go to.)
-- value (ex: admin@usedick.com)
-- field (Dick CRUD field configuration in JSON format. http://usedick.com/docs)
+- value (ex: admin@laravelbackpack.com)
+- field (Backpack CRUD field configuration in JSON format. http://laravelbackpack.com/docs)
 - active (1 or 0)
 - created_at
 - updated_at
 
-There is no interface available to add new settings. They are added by the developer directly in the database, since the Dick CRUD field configuration is a bit complicated. See the field types and their configuration code on http://usedick.com/docs
+There is no interface available to add new settings. They are added by the developer directly in the database, since the Dick CRUD field configuration is a bit complicated. See the field types and their configuration code on http://laravelbackpack.com/docs
 
 ## Screenshots
 
-See http://usedick.com
+See http://laravelbackpack.com
 
 ## Change log
 
@@ -79,15 +91,15 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 [ico-version]: https://img.shields.io/packagist/v/dick/settings.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/tabacitu/settings/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/tabacitu/settings.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/tabacitu/settings.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/backpack/settings/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/backpack/settings.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/backpack/settings.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/dick/settings.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/dick/settings
-[link-travis]: https://travis-ci.org/tabacitu/settings
-[link-scrutinizer]: https://scrutinizer-ci.com/g/tabacitu/settings/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/tabacitu/settings
+[link-travis]: https://travis-ci.org/backpack/settings
+[link-scrutinizer]: https://scrutinizer-ci.com/g/backpack/settings/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/backpack/settings
 [link-downloads]: https://packagist.org/packages/dick/settings
-[link-author]: https://github.com/tabacitu
+[link-author]: http://tabacitu.ro
 [link-contributors]: ../../contributors

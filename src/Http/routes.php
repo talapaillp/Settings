@@ -7,7 +7,7 @@
 */
 
 // Admin Interface Routes
-Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function()
+Route::group(['prefix' => 'admin', 'middleware' => ['web', 'auth']], function()
 {
 
 	// Settings

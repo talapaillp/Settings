@@ -1,10 +1,10 @@
-<?php namespace Dick\Settings;
+<?php namespace Backpack\Settings;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model as Eloquent;
-use Dick\Settings\Models\Setting as Setting;
+use Backpack\Settings\Models\Setting as Setting;
 use Config;
 
 class SettingsServiceProvider extends ServiceProvider
@@ -36,12 +36,8 @@ class SettingsServiceProvider extends ServiceProvider
         }
 
         // publish the migrations and seeds
-        $this->publishes([
-            __DIR__.'/database/migrations/' => database_path('migrations')
-        ], 'migrations');
-        $this->publishes([
-            __DIR__.'/database/seeds/' => database_path('seeds')
-        ], 'seeds');
+        $this->publishes([ __DIR__.'/database/migrations/' => database_path('migrations') ], 'migrations');
+        $this->publishes([ __DIR__.'/database/seeds/' => database_path('seeds') ], 'seeds');
     }
     /**
      * Define the routes for the application.
@@ -51,7 +47,7 @@ class SettingsServiceProvider extends ServiceProvider
      */
     public function setupRoutes(Router $router)
     {
-        $router->group(['namespace' => 'Dick\Settings\Http\Controllers'], function($router)
+        $router->group(['namespace' => 'Backpack\Settings\Http\Controllers'], function($router)
         {
             require __DIR__.'/Http/routes.php';
         });

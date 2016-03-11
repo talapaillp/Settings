@@ -1,18 +1,18 @@
-<?php namespace Dick\Settings\Http\Controllers;
+<?php namespace Backpack\Settings\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Dick\CRUD\Http\Controllers\CrudController;
+use Backpack\CRUD\app\Http\Controllers\CrudController;
 
 // VALIDATION
-use Dick\Settings\Http\Requests\SettingRequest as StoreRequest;
-use Dick\Settings\Http\Requests\SettingRequest as UpdateRequest;
+use Backpack\Settings\Http\Requests\SettingRequest as StoreRequest;
+use Backpack\Settings\Http\Requests\SettingRequest as UpdateRequest;
 
 class SettingCrudController extends CrudController {
 
 	public $crud = array(
-						"model" => "Dick\Settings\Models\Setting",
+						"model" => "Backpack\Settings\Models\Setting",
 						"entity_name" => "setting",
 						"entity_name_plural" => "settings",
 						"route" => "admin/setting",
