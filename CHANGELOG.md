@@ -1,6 +1,6 @@
 # Changelog
 
-All Notable changes to `Dick Settings` will be documented in this file
+All Notable changes to `Backpack Settings` will be documented in this file
 
 ## NEXT - YYYY-MM-DD
 
@@ -18,6 +18,12 @@ All Notable changes to `Dick Settings` will be documented in this file
 
 ### Security
 - Nothing
+
+
+## 1.2.1 - 2016-03-11
+
+### Fixed
+- Removed some more Dick mentions and fixed readme badges.
 
 
 ## 1.2.0 - 2016-03-11
