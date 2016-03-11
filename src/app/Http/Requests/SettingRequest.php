@@ -1,4 +1,4 @@
-<?php namespace Backpack\Settings\Http\Requests;
+<?php namespace Backpack\Settings\app\Http\Requests;
 
 use App\Http\Requests\Request;
 

@@ -4,7 +4,7 @@ use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model as Eloquent;
-use Backpack\Settings\Models\Setting as Setting;
+use Backpack\Settings\app\Models\Setting as Setting;
 use Config;
 
 class SettingsServiceProvider extends ServiceProvider
@@ -47,9 +47,9 @@ class SettingsServiceProvider extends ServiceProvider
      */
     public function setupRoutes(Router $router)
     {
-        $router->group(['namespace' => 'Backpack\Settings\Http\Controllers'], function($router)
+        $router->group(['namespace' => 'Backpack\Settings\app\Http\Controllers'], function($router)
         {
-            require __DIR__.'/Http/routes.php';
+            require __DIR__.'/app/Http/routes.php';
         });
     }
     /**

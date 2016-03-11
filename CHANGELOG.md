@@ -20,6 +20,12 @@ All Notable changes to `Backpack Settings` will be documented in this file
 - Nothing
 
 
+## 1.2.2 - 2016-03-11
+
+### Fixed
+- Changed folder structure to resemble a Laravel application - Http and Models are in an app folder.
+
+
 ## 1.2.1 - 2016-03-11
 
 ### Fixed
