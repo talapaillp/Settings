@@ -62,6 +62,13 @@ There is no interface available to add new settings. They are added by the devel
 
 See http://laravelbackpack.com
 
+- List view:
+![List / table view in Backpack/Settings](https://dl.dropboxusercontent.com/u/2431352/backpack_settings_list.png)
+- Editing a setting with the email field type:
+![Editing an email setting in Backpack/Settings](https://dl.dropboxusercontent.com/u/2431352/backpack_settings_email.png)
+- Editing a setting with the textarea field type:
+![Editing a textarea setting in Backpack/Settings](https://dl.dropboxusercontent.com/u/2431352/backpack_settings_textarea.png)
+
 ## Change log
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
