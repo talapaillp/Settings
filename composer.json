@@ -1,6 +1,6 @@
 {
     "name": "backpack/settings",
-    "description": "Application settings interface for Laravel 5 using Dick CRUD.",
+    "description": "Application settings interface for Laravel 5 using Backpack CRUD.",
     "keywords": [
         "tabacitu",
         "laravel backpack",
