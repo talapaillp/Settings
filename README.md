@@ -98,15 +98,15 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 [ico-version]: https://img.shields.io/packagist/v/backpack/settings.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/backpack/settings/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/backpack/settings.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/backpack/settings.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/laravel-backpack/settings/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/laravel-backpack/settings.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/laravel-backpack/settings.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/backpack/settings.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/backpack/settings
-[link-travis]: https://travis-ci.org/backpack/settings
-[link-scrutinizer]: https://scrutinizer-ci.com/g/backpack/settings/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/backpack/settings
+[link-travis]: https://travis-ci.org/laravel-backpack/settings
+[link-scrutinizer]: https://scrutinizer-ci.com/g/laravel-backpack/settings/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/laravel-backpack/settings
 [link-downloads]: https://packagist.org/packages/backpack/settings
 [link-author]: http://tabacitu.ro
 [link-contributors]: ../../contributors
