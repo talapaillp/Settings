@@ -83,6 +83,7 @@ class SettingCrudController extends CrudController {
 		$this->prepareColumns(); // checks that the columns are defined and makes sure the response is proper
 
 		$this->data['crud'] = $this->crud;
+		$this->data['title'] = ucfirst($this->crud['entity_name_plural']);
 
 		// load the view from /resources/views/vendor/dick/crud/ if it exists, otherwise load the one in the package
 		if (view()->exists('vendor.dick.crud.list'))
@@ -130,6 +131,8 @@ class SettingCrudController extends CrudController {
 		$this->prepareFields($this->data['entry']); // prepare the fields you need to show and prepopulate the values
 
 		$this->data['crud'] = $this->crud;
+		$this->data['title'] = trans('backpack::crud.edit').' '.$this->crud['entity_name'];
+
 		// load the view from /resources/views/vendor/dick/crud/ if it exists, otherwise load the one in the package
 		if (view()->exists('vendor.dick.crud.edit'))
 		{
