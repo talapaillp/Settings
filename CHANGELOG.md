@@ -20,6 +20,12 @@ All Notable changes to `Backpack Settings` will be documented in this file
 - Nothing
 
 
+## 2.0.0 - 2016-05-20
+
+### Added
+- SettingCrudController syntax changed to match the new API-based Backpack\CRUD v2.
+
+
 ## 1.2.3 - 2016-03-16
 
 ### Fixed

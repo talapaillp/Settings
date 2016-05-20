@@ -15,41 +15,21 @@ class SettingCrudController extends CrudController {
 		parent::__construct();
 
         $this->crud->setModel("Backpack\Settings\app\Models\Setting");
-        $this->crud->entity_name = "setting";
-		$this->crud->entity_name_plural = "settings";
-		$this->crud->route = "admin/setting";
-		$this->crud->permissions = ['list', 'edit'];
-		$this->crud->reorder = false;
-		$this->crud->reorder_label = "name";
-
-		$this->crud->columns = [
-							[
+        $this->crud->setEntityNameStrings('setting', 'settings');
+        $this->crud->setRoute('admin/setting');
+        $this->crud->denyAccess(['create', 'delete']);
+        $this->crud->setColumns(['name', 'value', 'description']);
+        $this->crud->addField([
 								'name' => 'name',
-								'label' => "Name"
-							],
-							[
+								'label' => 'Name',
+								'type' => 'text',
+								'disabled' => 'disabled'
+							]);
+        $this->crud->addField([
 								'name' => 'value',
-								'label' => "Value"
-							],
-							[
-								'name' => 'description',
-								'label' => "Description"
-							],
-					];
-
-		$this->crud->fields = [
-								[
-									'name' => 'name',
-									'label' => 'Name',
-									'type' => 'text',
-									'disabled' => 'disabled'
-								],
-								[
-									'name' => 'value',
-									'label' => 'Value',
-									'type' => 'text'
-								],
-							];
+								'label' => 'Value',
+								'type' => 'text'
+							]);
 	}
 
 	/**
@@ -62,9 +42,8 @@ class SettingCrudController extends CrudController {
 	public function index()
 	{
 		// if view_table_permission is false, abort
-		$this->crud->hasPermissionOrFail('list');
-
-		$this->crud->query = $this->crud->model->where('active', 1)->select('*'); // <---- this is where it's different
+		$this->crud->hasAccessOrFail('list');
+		$this->crud->addClause('where', 'active', 1); // <---- this is where it's different from CrudController::index()
 
 		$this->data['entries'] = $this->crud->getEntries();
 		$this->data['crud'] = $this->crud;
