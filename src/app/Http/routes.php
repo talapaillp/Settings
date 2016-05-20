@@ -7,10 +7,9 @@
 */
 
 // Admin Interface Routes
-Route::group(['prefix' => 'admin', 'middleware' => ['web', 'auth']], function()
-{
+Route::group(['prefix' => 'admin', 'middleware' => ['web', 'auth']], function () {
 
-	// Settings
-	Route::resource('setting', 'SettingCrudController');
+    // Settings
+    Route::resource('setting', 'SettingCrudController');
 
 });

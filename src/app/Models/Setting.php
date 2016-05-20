@@ -1,13 +1,14 @@
-<?php namespace Backpack\Settings\app\Models;
+<?php
 
-use Illuminate\Database\Eloquent\Model;
+namespace Backpack\Settings\app\Models;
+
 use Backpack\CRUD\CrudTrait;
+use Illuminate\Database\Eloquent\Model;
 
-class Setting extends Model {
+class Setting extends Model
+{
+    use CrudTrait;
 
-	use CrudTrait;
-
-	protected $table = 'settings';
-	protected $fillable = ['value'];
-
+    protected $table = 'settings';
+    protected $fillable = ['value'];
 }

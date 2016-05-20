@@ -1,7 +1,8 @@
-<?php namespace Backpack\Settings\database\seeds;
+<?php
+
+namespace Backpack\Settings\database\seeds;
 
 use Illuminate\Database\Seeder;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
 class SettingsTableSeeder extends Seeder
@@ -19,7 +20,7 @@ class SettingsTableSeeder extends Seeder
             'description'   => 'The email address that all emails from the contact form will go to.',
             'value'         => 'admin@updivision.com',
             'field'         => '',
-            'active'        => 1
+            'active'        => 1,
         ]);
 
         DB::table('settings')->insert([
@@ -28,7 +29,7 @@ class SettingsTableSeeder extends Seeder
             'description'   => 'Email adresses separated by comma, to be included as CC in the email sent by the contact form.',
             'value'         => '',
             'field'         => '',
-            'active'        => 1
+            'active'        => 1,
 
         ]);
 
@@ -38,7 +39,7 @@ class SettingsTableSeeder extends Seeder
             'description'   => 'Email adresses separated by comma, to be included as BCC in the email sent by the contact form.',
             'value'         => '',
             'field'         => '{\"name\":\"value\",\"label\":\"Value\",\"type\":\"email\"}',
-            'active'        => 1
+            'active'        => 1,
 
         ]);
 
@@ -48,7 +49,7 @@ class SettingsTableSeeder extends Seeder
             'description'   => 'Website motto',
             'value'         => 'this is the value',
             'field'         => '{\"name\":\"value\",\"label\":\"Value\", \"title\":\"Motto value\" ,\"type\":\"textarea\"}',
-            'active'        => 1
+            'active'        => 1,
 
         ]);
     }
