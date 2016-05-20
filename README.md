@@ -5,6 +5,7 @@
 [![Build Status][ico-travis]][link-travis]
 [![Coverage Status][ico-scrutinizer]][link-scrutinizer]
 [![Quality Score][ico-code-quality]][link-code-quality]
+[![Style CI](https://styleci.io/repos/53683729/shield)](https://styleci.io/repos/53683729)
 [![Total Downloads][ico-downloads]][link-downloads]
 
 An interface for the administrator to easily change application settings. Uses Laravel Backpack. On Laravel 5.2.
