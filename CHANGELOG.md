@@ -20,6 +20,12 @@ All Notable changes to `Backpack Settings` will be documented in this file
 - Nothing
 
 
+## 2.0.1 - 2016-05-20
+
+### Fixed
+- composer.json now requires Backpack\CRUD v2
+
+
 ## 2.0.0 - 2016-05-20
 
 ### Added
