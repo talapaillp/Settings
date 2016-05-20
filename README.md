@@ -9,6 +9,8 @@
 
 An interface for the administrator to easily change application settings. Uses Laravel Backpack. On Laravel 5.2.
 
+**Stable version will launch at the end of March. Subscribe to the [Mailchimp list](http://eepurl.com/bUEGjf) to be announced when the API is stable (late March - early April 2016).** 
+
 ## Install
 
 1) In your terminal:
