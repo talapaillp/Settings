@@ -24,11 +24,6 @@ class SettingCrudController extends CrudController
                                 'type'     => 'text',
                                 'disabled' => 'disabled',
                             ]);
-        $this->crud->addField([
-                                'name'  => 'value',
-                                'label' => 'Value',
-                                'type'  => 'text',
-                            ]);
     }
 
     /**
@@ -56,6 +51,31 @@ class SettingCrudController extends CrudController
     {
         return parent::storeCrud();
     }
+
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param int $id
+     *
+     * @return Response
+     */
+    public function edit($id)
+    {
+        $this->crud->hasAccessOrFail('update');
+
+        $this->data['entry'] = $this->crud->getEntry($id);
+        $this->crud->addField((array)json_decode($this->data['entry']->field)); // <---- this is where it's different
+        $this->data['crud'] = $this->crud;
+        $this->data['fields'] = $this->crud->getUpdateFields($id);
+        $this->data['title'] = trans('backpack::crud.edit').' '.$this->crud->entity_name;
+
+        $this->data['id'] = $id;
+
+        // load the view from /resources/views/vendor/backpack/crud/ if it exists, otherwise load the one in the package
+        return view('crud::edit', $this->data);
+    }
+
 
     public function update(UpdateRequest $request)
     {

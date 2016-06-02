@@ -20,6 +20,12 @@ All Notable changes to `Backpack Settings` will be documented in this file
 - Nothing
 
 
+## 2.0.3 - 2016-06-02
+
+### Fixed
+- It did not load the correct field type on edit (from the db). Now it does.
+
+
 ## 2.0.2 - 2016-06-02
 
 ### Fixed
