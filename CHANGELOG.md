@@ -20,6 +20,13 @@ All Notable changes to `Backpack Settings` will be documented in this file
 - Nothing
 
 
+## 2.0.2 - 2016-06-02
+
+### Fixed
+- Routes are now defined in the SettingsServiceProvider;
+- Using the Admin middleware instead of Auth, as of Backpack\Base v0.6.0;
+
+
 ## 2.0.1 - 2016-05-20
 
 ### Fixed

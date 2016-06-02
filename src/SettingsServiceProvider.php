@@ -7,6 +7,7 @@ use Config;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\ServiceProvider;
+use Route;
 
 class SettingsServiceProvider extends ServiceProvider
 {
@@ -51,7 +52,12 @@ class SettingsServiceProvider extends ServiceProvider
     public function setupRoutes(Router $router)
     {
         $router->group(['namespace' => 'Backpack\Settings\app\Http\Controllers'], function ($router) {
-            require __DIR__.'/app/Http/routes.php';
+            // Admin Interface Routes
+            Route::group(['prefix' => 'admin', 'middleware' => ['web', 'admin']], function()
+            {
+                // Settings
+                Route::resource('setting', 'SettingCrudController');
+            });
         });
     }
 
