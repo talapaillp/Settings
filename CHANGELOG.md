@@ -20,6 +20,12 @@ All Notable changes to `Backpack Settings` will be documented in this file
 - Nothing
 
 
+## 2.0.4 - 2016-06-06
+
+### Fixed
+- Seeds had slashes, which caused installation problems for some users.
+
+
 ## 2.0.3 - 2016-06-02
 
 ### Fixed

@@ -38,7 +38,7 @@ class SettingsTableSeeder extends Seeder
             'name'          => 'Contact form BCC field',
             'description'   => 'Email adresses separated by comma, to be included as BCC in the email sent by the contact form.',
             'value'         => '',
-            'field'         => '{\"name\":\"value\",\"label\":\"Value\",\"type\":\"email\"}',
+            'field'         => '{"name":"value","label":"Value","type":"email"}',
             'active'        => 1,
 
         ]);
@@ -48,7 +48,7 @@ class SettingsTableSeeder extends Seeder
             'name'          => 'Motto',
             'description'   => 'Website motto',
             'value'         => 'this is the value',
-            'field'         => '{\"name\":\"value\",\"label\":\"Value\", \"title\":\"Motto value\" ,\"type\":\"textarea\"}',
+            'field'         => '{"name":"value","label":"Value", "title":"Motto value" ,"type":"textarea"}',
             'active'        => 1,
 
         ]);
