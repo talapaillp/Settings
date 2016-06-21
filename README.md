@@ -18,8 +18,6 @@ An interface for the administrator to easily change application settings. Uses L
 
 ``` bash
 $ composer require backpack/settings
-$ php artisan migrate --path=vendor/backpack/settings/src/database/migrations
-$ php artisan db:seed --class="Backpack\Settings\database\seeds\SettingsTableSeeder"
 ```
 
 2) Add the service provider to your config/app.php file:
@@ -27,12 +25,18 @@ $ php artisan db:seed --class="Backpack\Settings\database\seeds\SettingsTableSee
 Backpack\Settings\SettingsServiceProvider::class,
 ```
 
-3) [Optional] Add a menu item for it in resources/views/vendor/backpack/base/inc/sidebar.blade.php or menu.blade.php:
+3) Run the migration and add some example settings:
+```bash
+$ php artisan vendor:publish --provider="Backpack\Settings\SettingsServiceProvider"
+$ php artisan migrate
+$ php artisan db:seed --class="Backpack\Settings\database\seeds\SettingsTableSeeder"
+```
+
+4) [Optional] Add a menu item for it in resources/views/vendor/backpack/base/inc/sidebar.blade.php or menu.blade.php:
 
 ```html
 <li><a href="{{ url('admin/setting') }}"><i class="fa fa-cog"></i> <span>Settings</span></a></li>
 ```
-
 
 ## Usage
 
