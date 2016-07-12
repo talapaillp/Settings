@@ -20,6 +20,12 @@ All Notable changes to `Backpack Settings` will be documented in this file
 - Nothing
 
 
+## 2.0.5 - 2016-07-12
+
+### Fixed
+- Seeds had missing Field column for two demo entries.
+
+
 ## 2.0.4 - 2016-06-06
 
 ### Fixed
