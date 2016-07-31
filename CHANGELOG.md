@@ -21,7 +21,7 @@ All Notable changes to `Backpack Settings` will be documented in this file
 
 
 
-## 2.0.6 - 2016-07-31
+## 2.0.7 - 2016-07-31
 
 ### Added
 - Bogus unit tests. At least we'be able to use travis-ci for requirements errors, until full unit tests are done.
