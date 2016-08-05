@@ -1,5 +1,6 @@
 <?php
 
+
 namespace Backpack\Settings;
 
 use Backpack\Settings\app\Models\Setting as Setting;
@@ -7,6 +8,7 @@ use Config;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
 use Route;
 
 class SettingsServiceProvider extends ServiceProvider
@@ -26,7 +28,7 @@ class SettingsServiceProvider extends ServiceProvider
     public function boot()
     {
         // only use the Settings package if the Settings table is present in the database
-        if (count(DB::select("SHOW TABLES LIKE 'settings'"))) {
+        if (count(Schema::getColumnListing('settings'))) {
             // get all settings from the database
             $settings = Setting::all();
 

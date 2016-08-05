@@ -20,6 +20,11 @@ All Notable changes to `Backpack Settings` will be documented in this file
 - Nothing
 
 
+## 2.0.8 - 2016-08-05
+
+### Fixed
+- PosgreSQL / SQLite support;
+
 
 ## 2.0.7 - 2016-07-31
 
