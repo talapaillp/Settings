@@ -1,14 +1,12 @@
 <?php
 
-
 namespace Backpack\Settings;
 
 use Backpack\Settings\app\Models\Setting as Setting;
 use Config;
 use Illuminate\Routing\Router;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\ServiceProvider;
 use Route;
 
 class SettingsServiceProvider extends ServiceProvider
