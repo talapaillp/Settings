@@ -20,6 +20,13 @@ All Notable changes to `Backpack Settings` will be documented in this file
 - Nothing
 
 
+## 2.0.9 - 2016-08-31
+
+### Fixed
+- Setting name is again disabled in the Edit screen;
+- Support for Laravel 5.3 (Backpack\CRUD 3.1.x);
+
+
 ## 2.0.8 - 2016-08-05
 
 ### Fixed

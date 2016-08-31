@@ -19,10 +19,12 @@ class SettingCrudController extends CrudController
         $this->crud->denyAccess(['create', 'delete']);
         $this->crud->setColumns(['name', 'value', 'description']);
         $this->crud->addField([
-                                'name'     => 'name',
-                                'label'    => 'Name',
-                                'type'     => 'text',
-                                'disabled' => 'disabled',
+                                'name'       => 'name',
+                                'label'      => 'Name',
+                                'type'       => 'text',
+                                'attributes' => [
+                                    'disabled' => 'disabled',
+                                    ]
                             ]);
     }
 
