@@ -24,7 +24,7 @@ class SettingCrudController extends CrudController
                                 'type'       => 'text',
                                 'attributes' => [
                                     'disabled' => 'disabled',
-                                    ]
+                                    ],
                             ]);
     }
 
