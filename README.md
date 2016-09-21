@@ -10,7 +10,7 @@
 
 An interface for the administrator to easily change application settings. Uses Laravel Backpack. On Laravel 5.2.
 
-**Subscribe to the [Backpack Newsletter](http://eepurl.com/bUEGjf) to be announced of any breaking changes or major updates (frequency: monthly or less).** 
+**Subscribe to the [Backpack Newsletter](http://eepurl.com/bUEGjf) to be announced of any breaking changes or major updates (frequency: monthly or less).**
 
 ## Install
 
@@ -35,7 +35,7 @@ $ php artisan db:seed --class="Backpack\Settings\database\seeds\SettingsTableSee
 4) [Optional] Add a menu item for it in resources/views/vendor/backpack/base/inc/sidebar.blade.php or menu.blade.php:
 
 ```html
-<li><a href="{{ url('admin/setting') }}"><i class="fa fa-cog"></i> <span>Settings</span></a></li>
+<li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/setting') }}"><i class="fa fa-cog"></i> <span>Settings</span></a></li>
 ```
 
 ## Usage
