@@ -53,10 +53,11 @@ class SettingsServiceProvider extends ServiceProvider
     {
         $router->group(['namespace' => 'Backpack\Settings\app\Http\Controllers'], function ($router) {
             // Admin Interface Routes
-            Route::group(['prefix' => 'admin', 'middleware' => ['web', 'admin']], function () {
-                // Settings
-                Route::resource('setting', 'SettingCrudController');
-            });
+            Route::group(['prefix' => config('backpack.base.route_prefix', 'admin'),
+                        'middleware' => ['web', 'admin']], function () {
+                            // Settings
+                            Route::resource('setting', 'SettingCrudController');
+                        });
         });
     }
 
