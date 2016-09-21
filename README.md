@@ -63,7 +63,7 @@ Settings are stored in the database in the "settings" table. Its columns are:
 - created_at
 - updated_at
 
-There is no interface available to add new settings. They are added by the developer directly in the database, since the Dick CRUD field configuration is a bit complicated. See the field types and their configuration code on http://laravelbackpack.com/docs
+There is no interface available to add new settings. They are added by the developer directly in the database, since the Backpack CRUD field configuration is a bit complicated. See the field types and their configuration code on http://laravelbackpack.com/docs
 
 ## Screenshots
 
