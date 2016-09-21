@@ -20,6 +20,12 @@ All Notable changes to `Backpack Settings` will be documented in this file
 - Nothing
 
 
+## 2.0.10 - 2016-09-21
+
+### Fixed
+- Settings now respects the admin prefix set in Backpack\Base's config file - thanks to [Twaambo Haamucenje](https://github.com/twoSeats);
+
+
 ## 2.0.9 - 2016-08-31
 
 ### Fixed
