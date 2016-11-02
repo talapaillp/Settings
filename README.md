@@ -58,12 +58,12 @@ Settings are stored in the database in the "settings" table. Its columns are:
 - name (ex: Contact form email address)
 - description (ex: The email address that all emails go to.)
 - value (ex: admin@laravelbackpack.com)
-- field (Backpack CRUD field configuration in JSON format. http://laravelbackpack.com/docs)
+- field (Backpack CRUD field configuration in JSON format. https://laravel-backpack.readme.io/docs/crud-fields#standard-field-types)
 - active (1 or 0)
 - created_at
 - updated_at
 
-There is no interface available to add new settings. They are added by the developer directly in the database, since the Backpack CRUD field configuration is a bit complicated. See the field types and their configuration code on http://laravelbackpack.com/docs
+There is no interface available to add new settings. They are added by the developer directly in the database, since the Backpack CRUD field configuration is a bit complicated. See the field types and their configuration code on https://laravel-backpack.readme.io/docs
 
 ## Screenshots
 
