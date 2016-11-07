@@ -10,7 +10,8 @@
 
 An interface for the administrator to easily change application settings. Uses Laravel Backpack. On Laravel 5.2.
 
-**Subscribe to the [Backpack Newsletter](http://eepurl.com/bUEGjf) to be announced of any breaking changes or major updates (frequency: monthly or less).**
+> ### Security updates and breaking changes
+> Please **[subscribe to the Backpack Newsletter](http://eepurl.com/bUEGjf)** so you can find out about any security updates, breaking changes or major features. We send an email every 1-2 months.
 
 ## Install
 
@@ -93,6 +94,8 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 ## Security
 
 If you discover any security related issues, please email hello@tabacitu.ro instead of using the issue tracker.
+
+Please **[subscribe to the Backpack Newsletter](http://eepurl.com/bUEGjf)** so you can find out about any security updates, breaking changes or major features. We send an email every 1-2 months.
 
 ## Credits
 
