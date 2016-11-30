@@ -25,7 +25,7 @@ class SettingsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if (! \App::runningInConsole()) {
+        if (!\App::runningInConsole()) {
             // only use the Settings package if the Settings table is present in the database
             if (count(Schema::getColumnListing('settings'))) {
                 // get all settings from the database
