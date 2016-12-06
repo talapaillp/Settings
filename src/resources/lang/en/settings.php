@@ -11,7 +11,7 @@ return [
   */
   'name'               => 'Name',
   'value'              => 'Value',
-  'description'        => 'Description',  
+  'description'        => 'Description',
   'setting_singular'   => 'setting',
   'setting_plural'     => 'settings',
 

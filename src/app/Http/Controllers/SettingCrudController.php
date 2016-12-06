@@ -19,15 +19,15 @@ class SettingCrudController extends CrudController
         $this->crud->denyAccess(['create', 'delete']);
         $this->crud->setColumns([
             [
-                'name' => 'name',
+                'name'  => 'name',
                 'label' => trans('backpack::settings.name'),
             ],
             [
-                'name' => 'value',
+                'name'  => 'value',
                 'label' => trans('backpack::settings.value'),
             ],
             [
-                'name' => 'description',
+                'name'  => 'description',
                 'label' => trans('backpack::settings.description'),
             ],
         ]);

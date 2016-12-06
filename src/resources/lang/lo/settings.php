@@ -11,7 +11,7 @@ return [
   */
   'name'               => 'ຊື່',
   'value'              => 'ຄ່າທີ່ລະບຸ',
-  'description'        => 'ຄໍາອະທິບາຍ',  
+  'description'        => 'ຄໍາອະທິບາຍ',
   'setting_singular'   => 'ການຕັ້ງຄ່າ',
   'setting_plural'     => 'ການຕັ້ງຄ່າຕ່າງໆ',
 
