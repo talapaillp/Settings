@@ -20,6 +20,12 @@ All Notable changes to `Backpack Settings` will be documented in this file
 - Nothing
 
 
+## 2.0.11 - 2016-12-07
+
+### Fixed
+- No longer conflicting with artisan when no database is present.
+
+
 ## 2.0.10 - 2016-09-21
 
 ### Fixed
