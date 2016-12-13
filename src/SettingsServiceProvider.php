@@ -25,23 +25,21 @@ class SettingsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if (!\App::runningInConsole()) {
-            // only use the Settings package if the Settings table is present in the database
-            if (count(Schema::getColumnListing('settings'))) {
-                // get all settings from the database
-                $settings = Setting::all();
+        // only use the Settings package if the Settings table is present in the database
+        if (!\App::runningInConsole() && count(Schema::getColumnListing('settings'))) {
+            // get all settings from the database
+            $settings = Setting::all();
 
-                // bind all settings to the Laravel config, so you can call them like
-                // Config::get('settings.contact_email')
-                foreach ($settings as $key => $setting) {
-                    Config::set('settings.'.$setting->key, $setting->value);
-                }
+            // bind all settings to the Laravel config, so you can call them like
+            // Config::get('settings.contact_email')
+            foreach ($settings as $key => $setting) {
+                Config::set('settings.'.$setting->key, $setting->value);
             }
-
-            // publish the migrations and seeds
-            $this->publishes([__DIR__.'/database/migrations/' => database_path('migrations')], 'migrations');
-            $this->publishes([__DIR__.'/database/seeds/' => database_path('seeds')], 'seeds');
         }
+
+        // publish the migrations and seeds
+        $this->publishes([__DIR__.'/database/migrations/' => database_path('migrations')], 'migrations');
+        $this->publishes([__DIR__.'/database/seeds/' => database_path('seeds')], 'seeds');
     }
 
     /**

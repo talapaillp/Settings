@@ -20,6 +20,14 @@ All Notable changes to `Backpack Settings` will be documented in this file
 - Nothing
 
 
+
+## 2.0.12 - 2016-12-13
+
+### Fixed
+- Can now publish assets again.
+
+
+
 ## 2.0.11 - 2016-12-07
 
 ### Fixed
