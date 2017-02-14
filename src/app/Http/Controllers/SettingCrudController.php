@@ -51,6 +51,7 @@ class SettingCrudController extends CrudController
     public function index()
     {
         $this->crud->addClause('where', 'active', 1);
+
         return parent::index();
     }
 
