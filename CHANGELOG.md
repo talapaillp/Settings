@@ -20,6 +20,12 @@ All Notable changes to `Backpack Settings` will be documented in this file
 - Nothing
 
 
+## 2.0.15 - 2017-02-14
+
+### Removed
+- Support for PHP 5.5 and HHVM, as Laravel 5.4 no longer supports them;
+
+
 ## 2.0.14 - 2017-02-14
 
 ### Added
