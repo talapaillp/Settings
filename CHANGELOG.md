@@ -20,6 +20,12 @@ All Notable changes to `Backpack Settings` will be documented in this file
 - Nothing
 
 
+## 2.0.14 - 2017-02-14
+
+### Added
+- Support for Backpack\CRUD 3.2
+
+
 ## 2.0.13 - 2017-01-08
 
 ### Added
