@@ -20,7 +20,7 @@ All Notable changes to `Backpack Settings` will be documented in this file
 - Nothing
 
 
-## 2.0.06 - 2017-04-21
+## 2.0.16 - 2017-04-21
 
 ### Removed
 - Backpack\CRUD no longer loads translations, as Backpack\Base does it for him.
