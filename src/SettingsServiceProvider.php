@@ -36,9 +36,6 @@ class SettingsServiceProvider extends ServiceProvider
                 Config::set('settings.'.$setting->key, $setting->value);
             }
         }
-
-        $this->loadTranslationsFrom(realpath(__DIR__.'/resources/lang'), 'backpack');
-
         // publish the migrations and seeds
         $this->publishes([__DIR__.'/database/migrations/' => database_path('migrations')], 'migrations');
         $this->publishes([__DIR__.'/database/seeds/' => database_path('seeds')], 'seeds');
@@ -75,11 +72,6 @@ class SettingsServiceProvider extends ServiceProvider
     {
         $this->registerSettings();
         $this->setupRoutes($this->app->router);
-
-        // use this if your package has a config file
-        // config([
-        //         'config/Settings.php',
-        // ]);
     }
 
     private function registerSettings()
