@@ -45,7 +45,7 @@ class SettingsTableSeeder extends Seeder
             'field'         => '{"name":"value","label":"Value", "title":"Motto value" ,"type":"textarea"}',
             'active'        => 1,
 
-        ]
+        ],
     ];
 
     /**
@@ -58,12 +58,13 @@ class SettingsTableSeeder extends Seeder
         foreach ($this->settings as $index => $setting) {
             $result = DB::table('settings')->insert($setting);
 
-            if (! $result) {
+            if (!$result) {
                 $this->command->info("Insert failed at record $index.");
+
                 return;
             }
         }
 
-        $this->command->info("Inserted " . count($this->settings) . " records.");
+        $this->command->info('Inserted '.count($this->settings).' records.');
     }
 }
