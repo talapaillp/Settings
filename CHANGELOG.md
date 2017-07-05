@@ -20,6 +20,11 @@ All Notable changes to `Backpack Settings` will be documented in this file
 - Nothing
 
 
+## 2.0.18 - 2017-07-05
+
+### Fixed
+- Removed HHVM from TravisCI, since Laravel 5.4 no longer supports it;
+
 ## 2.0.17 - 2017-07-05
 
 ### Added
