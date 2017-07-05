@@ -19,6 +19,13 @@ class SettingsServiceProvider extends ServiceProvider
     protected $defer = false;
 
     /**
+     * Where the route file lives, both inside the package and in the app (if overwritten).
+     *
+     * @var bool
+     */
+    public $routeFilePath = '/routes/backpack/settings.php';
+
+    /**
      * Perform post-registration booting of services.
      *
      * @return void
@@ -47,20 +54,20 @@ class SettingsServiceProvider extends ServiceProvider
     /**
      * Define the routes for the application.
      *
-     * @param \Illuminate\Routing\Router $router
-     *
+     * @param  \Illuminate\Routing\Router  $router
      * @return void
      */
     public function setupRoutes(Router $router)
     {
-        $router->group(['namespace' => 'Backpack\Settings\app\Http\Controllers'], function ($router) {
-            // Admin Interface Routes
-            Route::group(['prefix'   => config('backpack.base.route_prefix', 'admin'),
-                        'middleware' => ['web', 'admin'], ], function () {
-                            // Settings
-                            Route::resource('setting', 'SettingCrudController');
-                        });
-        });
+        // by default, use the routes file provided in vendor
+        $routeFilePathInUse = __DIR__.$this->routeFilePath;
+
+        // but if there's a file with the same name in routes/backpack, use that one
+        if (file_exists(base_path().$this->routeFilePath)) {
+            $routeFilePathInUse = base_path().$this->routeFilePath;
+        }
+
+        $this->loadRoutesFrom($routeFilePathInUse);
     }
 
     /**
@@ -71,9 +78,8 @@ class SettingsServiceProvider extends ServiceProvider
     public function register()
     {
         $this->registerSettings();
-        if(!config('backpack.base.skip_all_backpack_routes',false)){
-            $this->setupRoutes($this->app->router);            
-        }
+
+        $this->setupRoutes($this->app->router);
     }
 
     private function registerSettings()
