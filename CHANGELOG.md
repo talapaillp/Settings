@@ -25,6 +25,7 @@ All Notable changes to `Backpack Settings` will be documented in this file
 ### Added
 - Portugese translation (thanks to [Toni Almeida](https://github.com/promatik));
 - Portugese (Brasilian) translation (thanks to [Guilherme Augusto Henschel](https://github.com/cenoura));
+- command line feedback when seeding the settings table;
 
 
 ## 2.0.16 - 2017-04-21
