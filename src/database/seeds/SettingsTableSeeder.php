@@ -16,7 +16,7 @@ class SettingsTableSeeder extends Seeder
             'name'          => 'Contact form email address',
             'description'   => 'The email address that all emails from the contact form will go to.',
             'value'         => 'admin@updivision.com',
-            'field'         => '',
+            'field'         => '{"name":"value","label":"Value","type":"email"}',
             'active'        => 1,
         ],
         [
@@ -24,7 +24,7 @@ class SettingsTableSeeder extends Seeder
             'name'          => 'Contact form CC field',
             'description'   => 'Email adresses separated by comma, to be included as CC in the email sent by the contact form.',
             'value'         => '',
-            'field'         => '',
+            'field'         => '{"name":"value","label":"Value","type":"text"}',
             'active'        => 1,
 
         ],
