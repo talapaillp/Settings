@@ -11,11 +11,11 @@
 */
 
 Route::group([
-			'namespace' => 'Backpack\Settings\app\Http\Controllers',
-			'prefix'   => config('backpack.base.route_prefix', 'admin'),
-            'middleware' => ['web', 'admin']
+            'namespace'  => 'Backpack\Settings\app\Http\Controllers',
+            'prefix'     => config('backpack.base.route_prefix', 'admin'),
+            'middleware' => ['web', 'admin'],
     ], function () {
 
     // Settings
     Route::resource('setting', 'SettingCrudController');
-});
+    });
