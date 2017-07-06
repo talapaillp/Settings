@@ -15,6 +15,5 @@ Route::group([
     'prefix'     => config('backpack.base.route_prefix', 'admin'),
     'middleware' => ['web', 'admin'],
 ], function () {
-
     Route::resource('setting', 'SettingCrudController');
 });
