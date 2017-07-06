@@ -21,7 +21,7 @@ class SettingsServiceProvider extends ServiceProvider
     /**
      * Where the route file lives, both inside the package and in the app (if overwritten).
      *
-     * @var bool
+     * @var string
      */
     public $routeFilePath = '/routes/backpack/settings.php';
 
