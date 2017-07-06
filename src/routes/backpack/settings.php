@@ -5,17 +5,16 @@
 | Backpack\Settings Routes
 |--------------------------------------------------------------------------
 |
-| This file is where you may define or change all of the routes that are
+| This file is where you may define all of the routes that are
 | handled by the Backpack\Settings package.
 |
 */
 
 Route::group([
-            'namespace'  => 'Backpack\Settings\app\Http\Controllers',
-            'prefix'     => config('backpack.base.route_prefix', 'admin'),
-            'middleware' => ['web', 'admin'],
-    ], function () {
+    'namespace'  => 'Backpack\Settings\app\Http\Controllers',
+    'prefix'     => config('backpack.base.route_prefix', 'admin'),
+    'middleware' => ['web', 'admin'],
+], function () {
 
-    // Settings
     Route::resource('setting', 'SettingCrudController');
-    });
+});
