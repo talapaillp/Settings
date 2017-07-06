@@ -20,6 +20,11 @@ All Notable changes to `Backpack Settings` will be documented in this file
 - Nothing
 
 
+## 2.0.19 - 2017-07-06
+
+### Added
+- overwritable routes file;
+
 ## 2.0.18 - 2017-07-05
 
 ### Fixed
