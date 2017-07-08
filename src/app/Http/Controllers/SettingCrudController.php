@@ -72,7 +72,7 @@ class SettingCrudController extends CrudController
         $this->crud->hasAccessOrFail('update');
 
         $this->data['entry'] = $this->crud->getEntry($id);
-        $this->crud->addField((array) json_decode($this->data['entry']->field)); // <---- this is where it's different
+        $this->crud->addField(json_decode($this->data['entry']->field, true)); // <---- this is where it's different
         $this->data['crud'] = $this->crud;
         $this->data['saveAction'] = $this->getSaveAction();
         $this->data['fields'] = $this->crud->getUpdateFields($id);
