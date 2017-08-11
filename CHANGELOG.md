@@ -20,6 +20,12 @@ All Notable changes to `Backpack Settings` will be documented in this file
 - Nothing
 
 
+## [2.0.21] - 2017-08-11
+
+## Added
+- Russian (ru) language files, thanks to [Андрей](https://github.com/parabellumKoval);
+
+
 ## [2.0.20] - 2017-08-11
 
 ## Added
