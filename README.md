@@ -91,7 +91,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 ## Overwriting Functionality
 
 If you need to modify how this works in a project: 
-- create a ```routes/backpack/logmanager.php``` file; the package will see that, and load _your_ routes file, instead of the one in the package; 
+- create a ```routes/backpack/settings.php``` file; the package will see that, and load _your_ routes file, instead of the one in the package; 
 - create controllers/models that extend the ones in the package, and use those in your new routes file;
 - modify anything you'd like in the new controllers/models;
 
