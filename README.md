@@ -21,7 +21,7 @@ An interface for the administrator to easily change application settings. Uses L
 $ composer require backpack/settings
 ```
 
-2) Add the service provider to your config/app.php file:
+2) For Laravel <5.5 apps, add the service provider to your config/app.php file:
 ```php
 Backpack\Settings\SettingsServiceProvider::class,
 ```
