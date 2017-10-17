@@ -22,7 +22,7 @@ class SettingsTableSeeder extends Seeder
         [
             'key'           => 'contact_cc',
             'name'          => 'Contact form CC field',
-            'description'   => 'Email adresses separated by comma, to be included as CC in the email sent by the contact form.',
+            'description'   => 'Email addresses separated by comma, to be included as CC in the email sent by the contact form.',
             'value'         => '',
             'field'         => '{"name":"value","label":"Value","type":"text"}',
             'active'        => 1,
@@ -31,7 +31,7 @@ class SettingsTableSeeder extends Seeder
         [
             'key'           => 'contact_bcc',
             'name'          => 'Contact form BCC field',
-            'description'   => 'Email adresses separated by comma, to be included as BCC in the email sent by the contact form.',
+            'description'   => 'Email addresses separated by comma, to be included as BCC in the email sent by the contact form.',
             'value'         => '',
             'field'         => '{"name":"value","label":"Value","type":"email"}',
             'active'        => 1,
