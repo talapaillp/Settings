@@ -19,7 +19,7 @@ All Notable changes to `Backpack Settings` will be documented in this file
 ### Security
 - Nothing
 
-## [2.0.23] - 2017-11-14
+## [2.0.24] - 2017-11-14
 
 ## Fixed
 - proper CRUD routes - makes Settings package work on Backpack\CRUD 3.3;
