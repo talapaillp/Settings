@@ -12,12 +12,12 @@ class SettingsTableSeeder extends Seeder
      */
     protected $settings = [
         [
-            'key'           => 'contact_email',
-            'name'          => 'Contact form email address',
-            'description'   => 'The email address that all emails from the contact form will go to.',
-            'value'         => 'admin@updivision.com',
-            'field'         => '{"name":"value","label":"Value","type":"email"}',
-            'active'        => 1,
+            'key'         => 'contact_email',
+            'name'        => 'Contact form email address',
+            'description' => 'The email address that all emails from the contact form will go to.',
+            'value'       => 'admin@updivision.com',
+            'field'       => '{"name":"value","label":"Value","type":"email"}',
+            'active'      => 1,
         ],
         [
             'key'           => 'contact_cc',
@@ -35,15 +35,14 @@ class SettingsTableSeeder extends Seeder
             'value'         => '',
             'field'         => '{"name":"value","label":"Value","type":"email"}',
             'active'        => 1,
-
         ],
         [
-            'key'           => 'motto',
-            'name'          => 'Motto',
-            'description'   => 'Website motto',
-            'value'         => 'this is the value',
-            'field'         => '{"name":"value","label":"Value", "title":"Motto value" ,"type":"textarea"}',
-            'active'        => 1,
+            'key'         => 'motto',
+            'name'        => 'Motto',
+            'description' => 'Website motto',
+            'value'       => 'this is the value',
+            'field'       => '{"name":"value","label":"Value", "title":"Motto value" ,"type":"textarea"}',
+            'active'      => 1,
 
         ],
     ];
