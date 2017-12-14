@@ -20,6 +20,11 @@ All Notable changes to `Backpack Settings` will be documented in this file
 - Nothing
 
 
+## [2.0.27] - 2017-12-18
+
+## Fixed
+- routes are setup in the boot() method - merged #65;
+
 ## [2.0.26] - 2017-12-02
 
 ## Added
