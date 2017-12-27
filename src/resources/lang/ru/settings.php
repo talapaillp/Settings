@@ -13,6 +13,6 @@ return [
   'value'            => 'Значение',
   'description'      => 'Описание',
   'setting_singular' => 'настройка',
-  'setting_plural'   => 'найстройки',
+  'setting_plural'   => 'настройки',
 
 ];
