@@ -80,13 +80,12 @@ class SettingsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->registerSettings();
-    }
-
-    private function registerSettings()
-    {
         $this->app->bind('settings', function ($app) {
             return new Settings($app);
         });
+
+        // register their aliases
+        $loader = \Illuminate\Foundation\AliasLoader::getInstance();
+        $loader->alias('Setting', \Backpack\Settings\app\Models\Setting::class);
     }
 }
