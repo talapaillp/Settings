@@ -20,6 +20,17 @@ All Notable changes to `Backpack Settings` will be documented in this file
 - Nothing
 
 
+## [2.0.28] - 2018-03-13
+
+## Added
+- ```Setting``` alias;
+- ```Setting::get()``` method; fixes 
+- ```Setting::set()``` method;
+
+## Fixed
+- json_encode() field instead of casting it to array - merged #44; fixes #33;
+
+
 ## [2.0.27] - 2017-12-18
 
 ## Fixed
