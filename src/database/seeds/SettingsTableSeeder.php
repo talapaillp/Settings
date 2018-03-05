@@ -41,7 +41,7 @@ class SettingsTableSeeder extends Seeder
             'name'        => 'Motto',
             'description' => 'Website motto',
             'value'       => 'this is the value',
-            'field'       => '{"name":"value","label":"Value", "title":"Motto value" ,"type":"textarea"}',
+            'field'       => '{"name":"value","label":"Value","type":"textarea"}',
             'active'      => 1,
 
         ],

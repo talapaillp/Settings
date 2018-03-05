@@ -20,6 +20,12 @@ All Notable changes to `Backpack Settings` will be documented in this file
 - Nothing
 
 
+## [2.0.29] - 2018-03-13
+
+## Fixed
+- unique added to key column;
+
+
 ## [2.0.28] - 2018-03-13
 
 ## Added
