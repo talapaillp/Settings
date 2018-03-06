@@ -19,6 +19,11 @@ All Notable changes to `Backpack Settings` will be documented in this file
 ### Security
 - Nothing
 
+## [2.0.30] - 2018-03-15
+
+## Fixed
+- ```Setting``` getter and setter now trigger exception or return false if operation was unsuccessful;
+
 
 ## [2.0.29] - 2018-03-13
 
