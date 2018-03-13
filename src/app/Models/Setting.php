@@ -14,28 +14,28 @@ class Setting extends Model
 
     public static function get($key)
     {
-    	$setting = new Setting;
-    	$entry = $setting->where('key', $key)->first();
+        $setting = new self();
+        $entry = $setting->where('key', $key)->first();
 
-    	if (!$entry) {
-    		return null;
-    	}
+        if (!$entry) {
+            return;
+        }
 
-		return $entry->value;
+        return $entry->value;
     }
 
     public static function set($key, $value = null)
     {
-    	$setting = new Setting;
-    	$entry = $setting->where('key', $key)->first();
+        $setting = new self();
+        $entry = $setting->where('key', $key)->first();
 
-    	if (!$entry) {
-    		return false;
-    	}
+        if (!$entry) {
+            return false;
+        }
 
-    	$entry->update(['value' => $value]);
-    	\Config::set('settings.'.$key, $value);
+        $entry->update(['value' => $value]);
+        \Config::set('settings.'.$key, $value);
 
-    	return true;
+        return true;
     }
 }
