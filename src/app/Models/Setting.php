@@ -3,8 +3,8 @@
 namespace Backpack\Settings\app\Models;
 
 use Backpack\CRUD\CrudTrait;
-use Illuminate\Database\Eloquent\Model;
 use Config;
+use Illuminate\Database\Eloquent\Model;
 
 class Setting extends Model
 {
@@ -15,8 +15,10 @@ class Setting extends Model
 
     /**
      * Grab a setting value from the database.
-     * @param  string $key The setting key, as defined in the key db column
-     * @return string      The setting value.
+     *
+     * @param string $key The setting key, as defined in the key db column
+     *
+     * @return string The setting value.
      */
     public static function get($key)
     {
@@ -32,6 +34,7 @@ class Setting extends Model
 
     /**
      * Update a setting's value.
+     *
      * @param string $key   The setting key, as defined in the key db column
      * @param string $value The new value.
      */
