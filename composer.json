@@ -1,5 +1,5 @@
 {
-    "name": "backpack/settings",
+    "name": "talapaillp/settings",
     "description": "Application settings interface for Laravel 5 using Backpack CRUD.",
     "keywords": [
         "tabacitu",
@@ -23,7 +23,7 @@
         }
     ],
     "require": {
-        "backpack/crud": "^3.2"
+        "talapaillp/crud": "^3.2"
     },
     "require-dev": {
         "phpunit/phpunit" : "4.*",
